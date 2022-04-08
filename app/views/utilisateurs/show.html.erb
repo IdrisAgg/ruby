@@ -1,0 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @utilisateur %>
+
+<div class="container">
+<div class="d-flex justify-content-center">
+  <%= link_to "Edit this utilisateur", edit_utilisateur_path(@utilisateur) %> |
+  </div>
+  <div class="d-flex justify-content-center">
+  <%= link_to "Back to utilisateurs", utilisateurs_path %>
+</div>
+<div class="d-flex justify-content-center">
+  <%= button_to "Destroy this utilisateur", @utilisateur, method: :delete %>
+  </div>
+</div>
